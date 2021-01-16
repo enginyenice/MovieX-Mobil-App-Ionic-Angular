@@ -23,6 +23,6 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
     2. ionic serve
 
 ### Demo Hesap Bilgileri
-Kullanıcı Adı: **admin**
-Şifre: **admin**
-**!NOT: Kayıt olabilirsiniz**
+* Kullanıcı Adı: **admin**
+* Şifre: **admin**
+* **!NOT: Kayıt olabilirsiniz**
