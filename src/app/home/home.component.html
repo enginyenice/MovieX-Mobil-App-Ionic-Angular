@@ -1,0 +1,122 @@
+<div *ngIf="screen == 'homeList'">
+  <ion-card>
+    <ion-card-header> </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col class="ion-align-self-center">
+          <ion-button (click)="getMovieList()" fill="outline" expand="block">
+            <ion-icon name="refresh-outline"></ion-icon>Gündemi Yenile
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let movie of movieList">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-row>
+          <ion-col class="ion-align-self-center ion-text-center">
+            <ion-badge color="primary"
+              >Paylaşan: {{ movie["username"] }}</ion-badge
+            >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-align-self-center ion-text-center">
+            <ion-badge color="success"
+              >Paylaşım: {{ movie["create_at"] }}
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+      </ion-card-subtitle>
+      <ion-card-title>{{ movie["title"] }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-row>
+        <ion-col class="ion-align-self-center">
+          <ion-img [src]="movie['poster']"></ion-img>
+        </ion-col>
+      </ion-row>
+      <!-- Tarih -->
+      <ion-row>
+        <ion-col class="ion-align-self-start">
+          <ion-badge color="primary">Tarih</ion-badge>
+        </ion-col>
+        <ion-col class="ion-align-self-end">
+          <ion-badge color="success">Süre</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-align-self-start">
+          {{ movie["runtime"] }}
+        </ion-col>
+        <ion-col class="ion-align-self-end">
+          {{ movie["released"] }}
+        </ion-col>
+      </ion-row>
+  
+      <!-- Oyuncular -->
+      <ion-row>
+        <ion-col>
+          <ion-badge color="danger">Oyuncular</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{ movie["actors"] }}
+        </ion-col>
+      </ion-row>
+  
+      <!-- Yönetmen -->
+      <ion-row>
+        <ion-col>
+          <ion-badge color="secondary">Yönetmen</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{ movie["director"] }}
+        </ion-col>
+      </ion-row>
+      <!-- Yazar -->
+      <ion-row>
+        <ion-col>
+          <ion-badge color="tertiary">Yazar</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{ movie["writer"] }}
+        </ion-col>
+      </ion-row>
+  
+      <!-- Konu -->
+      <ion-row>
+        <ion-col>
+          <ion-badge color="medium">Konu</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          {{ movie["plot"] }}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-align-self-end">
+          <ion-button (click)="showComments(movie['id'])" color="tertiary"
+            >Yorum: {{ movie["commentCount"] }}</ion-button
+          >
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</div>
+<div *ngIf="screen == 'comments'">
+  <ion-row>
+    <ion-col class="ion-align-self-end">
+      <ion-button (click)="hiddenComments()" color="tertiary" expand="block">Geri Dön</ion-button>
+    </ion-col>
+  </ion-row>
+    <app-comments [commentId]="this.commentsSelectedId"></app-comments>
+</div>

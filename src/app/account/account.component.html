@@ -1,0 +1,42 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Hesap İşlemleri</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <form>
+    <ion-item>
+      <ion-label position="stacked">Kullanıcı Adı:</ion-label>
+      <ion-input readonly="true">{{username}}</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Yeni Şifre:</ion-label>
+      <ion-input  type="password" required         (keyup)="onKeyPassword($event)"
+      (ngModel)="(inputPassword)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Yeni Şifre Tekrar:</ion-label>
+      <ion-input type="password" required         (keyup)="onKeyPasswordRepeat($event)"
+      (ngModel)="(inputPasswordRepeat)"></ion-input>
+    </ion-item>
+    <ion-button (click)="EditPassword()" expand="full" color="danger">
+      <ion-icon name="lock-open-outline"></ion-icon>
+        Şifre Değiştir</ion-button
+    >
+
+
+    <ion-button
+    (click)="logout()"
+    expand="full">
+      <ion-icon name="log-out-outline"></ion-icon>
+        Çıkış Yap</ion-button
+    >
+    </form>
+  </ion-card-content>
+</ion-card>
+
+
+
+

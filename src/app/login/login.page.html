@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Giriş Yap</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Kullanıcı Adı</ion-label>
+      <ion-input
+        type="text"
+        required
+        (keyup)="onKeyUserName($event)"
+        (ngModel)="(inputUserName)"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Şifre</ion-label>
+      <ion-input
+        type="password"
+        required
+        (keyup)="onKeyPassword($event)"
+        (ngModel)="(inputPassword)"
+      ></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="submit"
+          color="primary"
+          expand="block"
+          (click)="Login()"
+          >Giriş Yap</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/register']" color="success" expand="block"
+        >Kayıt Ol</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-content>

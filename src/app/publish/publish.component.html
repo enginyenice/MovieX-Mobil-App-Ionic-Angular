@@ -1,0 +1,140 @@
+<ion-card *ngIf="publishStatus == null">
+  <ion-item>
+    <ion-item>
+      <ion-label position="stacked">Film İsmi Giriniz</ion-label>
+      <ion-input
+        (keyup)="onTitleKey($event)"
+        (ngModel)="(inputMovieTitle)"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button (click)="getMovie()" fill="outline" slot="end">
+      <ion-icon name="search-outline"></ion-icon> Ara
+    </ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    Lütfen paylaşmak istediğiniz filmin ismini giriniz.
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="title != null && publishStatus == null">
+
+  <ion-card-header>
+    <ion-card-subtitle>
+      <ion-row>
+        <ion-col class="ion-align-self-center  ion-text-center">
+          <ion-badge color="success">IMDB: {{ imdbRating }}</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-card-subtitle>
+    <ion-card-title>{{ title }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+        <ion-img [src]="poster"></ion-img>
+      </ion-col>
+    </ion-row>
+    <!-- Tarih -->
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+          <ion-badge color="primary">Tarih</ion-badge> 
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <ion-badge color="success">Süre</ion-badge>
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        {{ runtime }}
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        {{ released }}
+      </ion-col>
+    </ion-row>
+<!-- Yönetmen -->
+<ion-row>
+  <ion-col>
+    <ion-badge color="secondary">Tür</ion-badge>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    {{ genre }}
+  </ion-col>
+</ion-row>
+
+    <!-- Oyuncular -->
+    <ion-row>
+      <ion-col>
+        <ion-badge color="danger">Oyuncular</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        {{ actors }}
+      </ion-col>
+    </ion-row>
+
+    <!-- Yönetmen -->
+    <ion-row>
+      <ion-col>
+        <ion-badge color="secondary">Yönetmen</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        {{ director }}
+      </ion-col>
+    </ion-row>
+    <!-- Yazar -->
+    <ion-row>
+      <ion-col>
+        <ion-badge color="tertiary">Yazar</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        {{ writer }}
+      </ion-col>
+    </ion-row>
+
+    <!-- Konu -->
+    <ion-row>
+      <ion-col>
+        <ion-badge color="medium">Konu</ion-badge>
+      </ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        {{ plot }}
+      </ion-col>
+    </ion-row>
+    <!-- Buton -->
+    <ion-button
+      expand="block"
+      (click)="publishMovie()"
+      fill="outline"
+      slot="end"
+    >
+      <ion-icon name="share-social-outline"></ion-icon> Paylaş
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="publishStatus != null">
+  <ion-card-content>
+    <ion-card-title *ngIf="publishStatus == 'success'" color="success"
+      >Gönderi başarıyla gönderildi.</ion-card-title
+    >
+    <ion-card-title *ngIf="publishStatus == 'error'" color="danger"
+      >Gönderi paylaşılırken bir hata oluştu.</ion-card-title
+    > <br>
+    <ion-button (click)="clearLastData()" fill="outline" slot="end">
+      <ion-icon name="search-outline"></ion-icon> Yeni Film Paylaş
+    </ion-button>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,36 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Yorum Yap</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-textarea
+      (keyup)="onCommentKey($event)"
+      (ngModel)="(inputComment)"
+      placeholder="Paylaşım hakkında yorum yap..."></ion-textarea>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="setComments()" fill="outline" expand="block">
+          <ion-icon name="share-outline"></ion-icon>
+          Gönder
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Yorumlar</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content *ngFor="let comment of commentsList">
+    <ion-item>
+      <ion-label class="text-left">{{ comment["username"] }}</ion-label>
+      <ion-label class="text-right">{{ comment["create_at"] }}</ion-label>
+    </ion-item>
+    <ion-item>
+      {{ comment["comment"] }}
+    </ion-item>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Kayıt Ol</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Kullanıcı Adı</ion-label>
+      <ion-input type="text" required         (keyup)="onKeyUserName($event)"
+      (ngModel)="(inputUserName)"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Şifre</ion-label>
+      <ion-input type="password" required         (keyup)="onKeyPassword($event)"
+      (ngModel)="(inputPassword)"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Şifre Tekrar</ion-label>
+      <ion-input type="password" required         (keyup)="onKeyPasswordRepeat($event)"
+      (ngModel)="(inputPasswordRepeat)"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="Register()" color="danger" expand="block">Kayıt Ol</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['']"  color="success" expand="block">Giriş Yap</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

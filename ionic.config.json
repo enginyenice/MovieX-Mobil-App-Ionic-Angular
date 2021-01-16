@@ -1,0 +1,7 @@
+{
+  "name": "movieX",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
