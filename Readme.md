@@ -28,17 +28,23 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
 * Şifre: **admin**
 * **!NOT: Kayıt olabilirsiniz**
 
-### Ekran Görüntüsü
+### Proje Görüntüleri
 
 ####  Giriş Yap ve Kayıt Ol
+Kullanıcıların uygulamaya giriş yapması için kullanılan sayfalar
 ![Login&&Register](https://i.hizliresim.com/lvjdBv.png)
 
-####  Anasayfa ve Yorum Yap
+
+####  Ana Sayfa ve Yorum Yap
+Tüm paylaşımlar ana sayfa üzerinde yapılmaktadır. Herhangi bir paylaşımın altında bulunan yorum butonuna tıklayarak o paylaşım ile ilgili yapılan yorumları okuyabilir veya yorum yapabilirsiniz.
 ![Home&&Comment](https://i.hizliresim.com/5o3pJr.png)
 
 #### Paylaşım Yap
+Paylaşmak istediğiniz filmi sayfanın üst tarafında bulunan arama ekranı üzerinden arayabilirsiniz. Ardından karşınıza çıkan film bilgilerini inceleyebilir ve Paylaş butonu ile filmi paylaşabilirsiniz.
 
 ![PublishTop&&PublishBottom](https://i.hizliresim.com/SI9Jz7.png)
 
 #### Hesabım
+
+Hesabınızın  şifresini değiştirebilirsiniz veya hesabınızdan çıkış yapabilirsiniz.
 ![Account](https://i.hizliresim.com/Iw65oL.png)
