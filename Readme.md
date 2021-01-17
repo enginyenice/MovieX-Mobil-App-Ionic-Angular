@@ -47,4 +47,5 @@ Paylaşmak istediğiniz filmi sayfanın üst tarafında bulunan arama ekranı ü
 #### Hesabım
 
 Hesabınızın  şifresini değiştirebilirsiniz veya hesabınızdan çıkış yapabilirsiniz.
+
 ![Account](https://i.hizliresim.com/Iw65oL.png)
