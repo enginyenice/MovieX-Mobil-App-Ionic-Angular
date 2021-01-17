@@ -29,9 +29,16 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
 * **!NOT: Kayıt olabilirsiniz**
 
 ### Ekran Görüntüsü
+
+####  Giriş Yap ve Kayıt Ol
 ![Login&&Register](https://i.hizliresim.com/lvjdBv.png)
+
+####  Anasayfa ve Yorum Yap
 ![Home&&Comment](https://i.hizliresim.com/5o3pJr.png)
+
+#### Paylaşım Yap
 
 ![PublishTop&&PublishBottom](https://i.hizliresim.com/SI9Jz7.png)
 
+#### Hesabım
 ![Account](https://i.hizliresim.com/Iw65oL.png)
