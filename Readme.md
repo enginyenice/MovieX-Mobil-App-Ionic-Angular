@@ -1,3 +1,4 @@
+
 # MovieX [Film - Dizi ] Uygulaması
 ## Kocaeli Üniversitesi - Bilgisayar Mühendisliği
 ## Engin Yenice - 190201133
@@ -26,3 +27,11 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
 * Kullanıcı Adı: **admin**
 * Şifre: **admin**
 * **!NOT: Kayıt olabilirsiniz**
+
+### Ekran Görüntüsü
+![Login&&Register](https://i.hizliresim.com/lvjdBv.png)
+![Home&&Comment](https://i.hizliresim.com/5o3pJr.png)
+
+![PublishTop&&PublishBottom](https://i.hizliresim.com/SI9Jz7.png)
+
+![Account](https://i.hizliresim.com/Iw65oL.png)
