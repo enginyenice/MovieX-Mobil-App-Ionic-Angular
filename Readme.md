@@ -30,7 +30,7 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
 * Şifre: **admin**
 * **!NOT: Kayıt olabilirsiniz**
 
-### Proje Görüntüleri
+### Proje Sayfaları
 
 ####  Giriş Yap ve Kayıt Ol
 Kullanıcıların uygulamaya giriş yapması için kullanılan sayfalar
