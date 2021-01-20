@@ -6,12 +6,12 @@
 ### MovieX Nedir?
 MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bireyler ile birlikte paylaşılan filmler ile ilgili iletişim kurabileceği küçük bir sosyal medya projesidir.
 
-### MovieX Neler Yapılabilir?
+### MovieX İle Neler Yapılabilir?
 * Film-dizi paylaşabilirsiniz.
 * Film-dizi hakkında görüşlerinizi paylaşabilirsiniz.
 * Film-dizi hakkında paylaşılan görüşleri okuyabilirsiniz.
 
-### Hangi API iletişim kurar?
+### Hangi API'İleler İle İletişim Kurar?
 * [Moviex API](http://moviex.enginyenice.com/)  => Kullanıcı giriş çıkış  işlemleri, film paylaşma ve yorum yapma işlemleri buradan gerçekleşir.
 * [OMDB](http://www.omdbapi.com/) => Film arama işlemleri bu api üzerinden gerçekleşir. (Bu API  [Moviex API](http://moviex.enginyenice.com/)  içerisinden bağlanmaktadır. Mobil tarafından her hangi bir kod yazmamaktadır.)
 
