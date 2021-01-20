@@ -14,8 +14,7 @@ MovieX, Film ve dizi meraklısı bireylerin bir araya gelebileceği ve diğer bi
 ### Hangi API'İleler İle İletişim Kurar?
 * [Moviex API](http://moviex.enginyenice.com/)  => Kullanıcı giriş çıkış  işlemleri, film paylaşma ve yorum yapma işlemleri buradan gerçekleşir.
 * [OMDB](http://www.omdbapi.com/) => Film arama işlemleri bu api üzerinden gerçekleşir. (Bu API  [Moviex API](http://moviex.enginyenice.com/)  içerisinden bağlanmaktadır. Mobil tarafından her hangi bir kod yazmamaktadır.)
-
-    [MovieX API Kodları](https://github.com/enginyenice/MovieX-PHP-API)
+#### [MovieX PHP API Repository](https://github.com/enginyenice/MovieX-PHP-API)
 
 ### Kullanılan Ek Paketler
 **ionic/storage** paketi harici olarak eklenmiştir.
